@@ -1,0 +1,11 @@
+---
+ - name: Create a App user
+     user:
+      name: testuser
+      password: '$5$Q2JFpjXnRgof/US9$rPpZcyMXCRzVmFI4a48CGzjYVTxlGbd1JAECglHkPB5'
+      groups: 
+      state: present
+      shell: /bin/bash       # Defaults to /bin/bash
+      system: no             # Defaults to no
+      createhome: yes        # Defaults to yes
+      home: /home/testapp	 # Defaults to /home/<username>
